@@ -1,0 +1,15 @@
+ATLAS GOVERNANCE DATASET — REVISED VALIDATION
+
+PASS - Exactly 10 expected companies
+PASS - Exactly 110 records
+PASS - Exactly 11 records per company
+PASS - All expected variables present
+PASS - No duplicate records
+PASS - All missing values documented as Not disclosed
+PASS - All required source metadata present
+
+Total records: 110
+Companies: 10
+Documented undisclosed values: 5
+Missing page numbers: 4
+Duplicate records: 0
