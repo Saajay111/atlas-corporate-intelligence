@@ -8,7 +8,7 @@ ATLAS investigates how selected corporate governance characteristics and executi
 
 The project combines financial statement analysis, corporate governance research, executive compensation analysis, and statistical testing.
 
-**Central research question:**
+**Central Research Question:**
 
 How are selected corporate governance characteristics associated with financial performance across companies operating in different industries?
 
@@ -29,6 +29,7 @@ The research examines ten publicly traded companies across five industries.
 ## 3. Research Components
 
 ### Financial Analysis
+
 Financial measures cover fiscal years 2022–2025 and include:
 
 - Revenue
@@ -43,6 +44,7 @@ Financial measures cover fiscal years 2022–2025 and include:
 Financial ratios include revenue growth, net profit margin, liabilities-to-assets, operating cash flow margin, R&D intensity, and capital expenditure intensity.
 
 ### Corporate Governance
+
 The governance analysis examines selected characteristics, including:
 
 - Board size
@@ -51,9 +53,11 @@ The governance analysis examines selected characteristics, including:
 - CEO incentive compensation
 
 ### Statistical Analysis
+
 The project uses Spearman rank correlations to examine relationships between governance measures and financial performance.
 
 Robustness analyses include:
+
 - Nonbank-company sensitivity analysis
 - Leave-one-company-out sensitivity analysis
 - Python–R replication comparisons
@@ -68,23 +72,24 @@ The processed financial dataset contains 268 observations, while the financial r
 
 Data validation includes duplicate checks, formula reconstruction, missingness assessments, compensation reconciliation, and cross-language statistical replication.
 
-See [`research/methodology.md`](research/methodology.md) for the detailed methodology.
+See the [methodology](research/methodology.md), [data dictionary](research/data_dictionary.md), and [research proposal](research/research_proposal.md).
 
 ## 5. Validation and Reproducibility
 
 The project includes independent Python and R replication checks.
 
 Reported validation results include:
+
 - 18/18 primary Spearman correlation comparisons matched.
 - 18/18 nonbank sensitivity comparisons matched.
 - 4/4 leave-one-out summary comparisons matched.
-- 40/40 overall reported replication comparisons matched.
+- All 40 reported Python–R replication comparisons matched across the primary, nonbank sensitivity, and leave-one-out analyses.
 
 Financial ratio reconstruction was also checked against the integrated FY2025 dataset, with 60/60 observations matching.
 
 The repository contains processed datasets, validation reports, statistical results, research figures, and R replication scripts.
 
-See [`research/reproducibility.md`](research/reproducibility.md).
+See the [reproducibility documentation](research/reproducibility.md) and [research findings](research/findings.md).
 
 ## 6. Repository Structure
 
@@ -125,7 +130,7 @@ atlas-corporate-intelligence/
 - Google Colab
 - GitHub
 
-See [`documentation/technical_stack.md`](documentation/technical_stack.md).
+See the [technical stack documentation](documentation/technical_stack.md).
 
 ## 8. Limitations
 
@@ -137,13 +142,13 @@ This study has several limitations:
 - The study relies on observational data and cannot establish causal relationships.
 - The findings may not generalize to all companies or industries.
 
-See [`research/limitations.md`](research/limitations.md).
+See the [research limitations](research/limitations.md).
 
 ## 9. Source Documentation
 
-The repository includes an inventory documenting ten SEC DEF 14A proxy statement source files.
+The repository includes an inventory documenting ten SEC DEF 14A proxy statement source files, including their filenames and accession numbers.
 
-The original proxy statement text files, 10-K filings, and Company Facts JSON files are not currently archived in this repository. The source inventory documents the proxy statement filenames and accession numbers; it should not be interpreted as an archive of the original filings.
+The original proxy statement text files, 10-K filings, and Company Facts JSON files are not currently archived in this repository. The source inventory documents the proxy statement files but should not be interpreted as an archive of the original filings.
 
 ## 10. Project Status
 
