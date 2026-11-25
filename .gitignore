@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# ATLAS security and local files
+.env.*
+!.env.example
+
+# API keys and credentials
+*credentials*
+*secret*
+*token*
+secrets/
+
+# Local research files
+.ipynb_checkpoints/
+*.ipynb
+*.pem
+*.key
+
+# Local data and temporary exports
+data/raw/company_facts/
+data/raw/governance_sources/
+*.bak
+*.tmp
