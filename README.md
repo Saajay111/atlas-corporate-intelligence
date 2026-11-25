@@ -152,6 +152,6 @@ The original proxy statement text files, 10-K filings, and Company Facts JSON fi
 
 ## 10. Project Status
 
-ATLAS is maintained as a private research repository. Its datasets, analyses, validation records, figures, and documentation are organized to support transparency and reproducibility.
+ATLAS is maintained as a research repository. Its datasets, analyses, validation records, figures, and documentation are organized to support transparency and reproducibility.
 
 Further work may expand the company sample, improve source-file archiving, and extend the analysis across additional fiscal years.
