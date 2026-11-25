@@ -1,0 +1,7 @@
+ratio,formula,validation_status
+Revenue Growth,Current Revenue vs. Prior Revenue,PASS
+Net Profit Margin,Net Income / Revenue × 100,PASS
+Liabilities-to-Assets,Total Liabilities / Total Assets × 100,PASS
+Operating Cash Flow Margin,Operating Cash Flow / Revenue × 100,PASS
+R&D Intensity,R&D Expense / Revenue × 100,PASS
+Capital Expenditure Intensity,Capital Expenditures / Revenue × 100,PASS

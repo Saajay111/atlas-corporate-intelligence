@@ -1,0 +1,29 @@
+ATLAS — PYTHON/R REPLICATION AUDIT
+===================================
+
+Primary Spearman correlations:
+- 18 relationships independently calculated in R
+- 18/18 matched Python
+- Maximum absolute difference: approximately 5.0e-16
+
+Nonbank sensitivity:
+- 18 relationships independently calculated in R
+- 18/18 matched Python
+
+Leave-one-out sensitivity:
+- 4 selected relationships independently recalculated in R
+- 4/4 summaries matched Python
+- 40 individual leave-one-out calculations generated
+
+Total Python/R comparison results:
+- 40/40 matched
+- Differences are within floating-point precision
+
+Interpretation:
+The primary correlation and robustness calculations are reproducible
+across Python and R. This validates computational consistency, not
+the completeness of source data, causal relationships, or the
+appropriateness of every research measure.
+
+All analyses remain exploratory because the sample contains only
+10 companies across five industries.

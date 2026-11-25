@@ -1,0 +1,7 @@
+governance_variable,financial_outcome,full_sample_rho,excluding_banks_rho,leave_one_out_min,leave_one_out_max,direction_consistent,companies_compared,nonbank_companies_compared
+governance_board_independence_pct,ratio_net_profit_margin,0.523,0.599,0.343,0.65,True,10,8
+governance_board_size,ratio_revenue_growth,-0.729,-0.805,-0.822,-0.656,True,10,8
+governance_ceo_incentive_compensation_pct,ratio_net_profit_margin,0.539,0.333,0.367,0.767,True,10,8
+governance_ceo_incentive_compensation_pct,ratio_operating_cash_flow_margin,0.115,0.31,-0.217,0.25,False,10,8
+governance_ceo_incentive_compensation_pct,ratio_revenue_growth,0.612,0.571,0.467,0.783,True,10,8
+governance_independent_committee_membership,ratio_net_profit_margin,0.609,0.63,0.411,0.725,True,10,8

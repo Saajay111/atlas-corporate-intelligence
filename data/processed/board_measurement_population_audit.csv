@@ -1,0 +1,11 @@
+ticker,board_size,independent_directors,population_basis,recalculated_independence_pct,board_size_source,board_size_matches,independent_directors_source,independent_directors_matches,board_independence_pct_source,board_independence_pct_matches,all_values_match
+AAPL,8,7,Director nominees,87.5,8.0,True,7.0,True,87.5,True,True
+BAC,12,11,Director nominees,91.66666666666666,12.0,True,11.0,True,91.66666666666666,True,True
+COST,9,8,Currently serving directors; excludes nominee Gina Raimondo,88.88888888888889,9.0,True,8.0,True,88.888889,True,True
+CVX,13,11,Current Board before disclosed 2026 annual-meeting reduction,84.61538461538461,13.0,True,11.0,True,84.615385,True,True
+JPM,11,10,Director nominees,90.9090909090909,11.0,True,10.0,True,90.91,True,True
+MRK,13,12,Director nominees,92.3076923076923,13.0,True,12.0,True,92.3076923076923,True,True
+MSFT,12,11,Director nominees,91.66666666666666,12.0,True,11.0,True,91.67,True,True
+PFE,13,12,Currently serving directors,92.3076923076923,13.0,True,12.0,True,92.3076923076923,True,True
+WMT,12,9,Proposed Board assuming all nominees are elected,75.0,12.0,True,9.0,True,75.0,True,True
+XOM,13,12,Currently serving directors,92.3076923076923,13.0,True,12.0,True,92.307692,True,True

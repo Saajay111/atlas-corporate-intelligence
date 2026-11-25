@@ -1,0 +1,4 @@
+analysis,language,relationships_calculated,python_comparisons_matched,all_checks_passed
+Primary Spearman correlations,R,18,18,True
+Nonbank sensitivity,R,18,18,True
+Leave-one-out sensitivity,R,4,4,True

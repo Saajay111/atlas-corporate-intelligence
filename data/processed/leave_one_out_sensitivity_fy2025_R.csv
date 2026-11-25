@@ -1,0 +1,5 @@
+"governance_variable","financial_outcome","companies_compared","full_sample_rho","leave_one_out_min","leave_one_out_max","direction_consistent"
+"governance_board_size","ratio_revenue_growth",10,-0.728563474312808,-0.821909464719636,-0.655562281375236,TRUE
+"governance_ceo_incentive_compensation_pct","ratio_net_profit_margin",10,0.539393939393939,0.366666666666667,0.766666666666667,TRUE
+"governance_independent_committee_membership","ratio_net_profit_margin",10,0.609271795844942,0.410791918128875,0.724568837309472,TRUE
+"governance_board_independence_pct","ratio_net_profit_margin",10,0.522798767564856,0.343099237589846,0.65,TRUE
