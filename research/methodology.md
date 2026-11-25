@@ -2,141 +2,221 @@
 
 ## 1. Research Design
 
-ATLAS will use a comparative, observational research design to investigate relationships between corporate governance, legal and regulatory exposure, business strategy, and financial performance.
+ATLAS uses an observational, comparative research design to examine
+relationships between corporate governance characteristics and
+financial performance among publicly traded companies.
 
-The research will examine ten publicly traded companies across five industries over fiscal years 2022–2025.
+The central research question is:
 
-The unit of analysis will be the company-year, allowing comparisons both between companies and over time.
+**How are corporate governance structures, executive incentive
+compensation, and selected organizational characteristics associated
+with financial performance across companies in different industries?**
 
-## 2. Research Sample
+The study is exploratory. It evaluates associations rather than
+attempting to establish causal effects.
 
-| Industry | Company A | Company B |
-|---|---|---|
-| Technology | Apple | Microsoft |
-| Banking | JPMorgan Chase | Bank of America |
-| Retail | Walmart | Costco |
-| Energy | ExxonMobil | Chevron |
-| Pharmaceuticals | Pfizer | Merck |
+## 2. Company Selection and Sample
 
-Companies will be selected based on their public reporting availability, industry significance, and suitability for comparative analysis.
+The sample contains ten publicly traded U.S. companies across five
+industries, with two companies selected from each industry.
 
-## 3. Research Pillars
+| Industry | Companies |
+|---|---|
+| Technology | Apple (AAPL), Microsoft (MSFT) |
+| Banking | JPMorgan Chase (JPM), Bank of America (BAC) |
+| Retail | Walmart (WMT), Costco (COST) |
+| Energy | Exxon Mobil (XOM), Chevron (CVX) |
+| Pharmaceuticals | Pfizer (PFE), Merck (MRK) |
 
-### A. Business Strategy
+The sample is purposive rather than randomly selected. It supports
+structured comparisons but is not statistically representative of
+all public companies or their industries.
 
-Variables:
-- Revenue segments and diversification.
-- Research and development expenditure.
-- Capital expenditure.
-- Major strategic initiatives.
-- Competitive positioning.
-- Business expansion and investment decisions.
+## 3. Data Collection
 
-Evidence will primarily come from annual reports, company disclosures, and management discussion and analysis sections.
+### Financial data
 
-### B. Corporate Law and Governance
+Financial statement data covers fiscal years 2022–2025. The study
+uses SEC filings and SEC Company Facts data.
 
-Variables:
-- Board independence.
-- Board leadership structure.
-- Executive compensation.
-- Shareholder voting rights.
-- Governance policies.
-- Material litigation disclosures.
-- Regulatory investigations and enforcement matters.
+The eight financial measures collected were:
 
-Evidence will come from annual reports, proxy statements, SEC disclosures, and official regulatory publications.
+- Revenue
+- Operating income
+- Net income
+- Total assets
+- Total liabilities
+- Operating cash flow
+- Research and development expense
+- Capital expenditures
 
-Legal and regulatory matters will be classified by category, disclosed status, and significance. Their presence will not automatically be interpreted as evidence of misconduct.
+The primary integrated analysis matches FY2025 governance observations
+with FY2025 financial performance measures.
 
-### C. Corporate Finance
+### Corporate governance data
 
-Common financial variables:
-- Revenue.
-- Revenue growth.
-- Operating income.
-- Total assets.
-- Total liabilities.
-- Operating cash flow.
-- Return on assets.
+Governance information was collected from FY2025 proxy statements
+(DEF 14A filings) and related company disclosures.
 
-Additional industry-specific measures will be used where appropriate.
+The governance dataset contains 11 variables:
 
-For banks, these may include net interest margin, efficiency ratio, and regulatory capital ratios. For other industries, relevant measures may include operating margins, capital expenditure, and research intensity.
+1. Board size
+2. Independent director count
+3. Board independence percentage
+4. CEO-chair separation
+5. Board committee count
+6. Independent committee membership
+7. Special-meeting threshold
+8. Proxy-access threshold
+9. CEO total compensation
+10. CEO incentive compensation percentage
+11. Clawback policy
 
-## 4. Data Sources
+Each coded observation includes source and coding metadata, including
+the filing, accession information, source excerpt, and coding status
+where available.
 
-Primary sources:
-- SEC EDGAR annual reports (10-K).
-- SEC proxy statements (DEF 14A).
-- SEC Company Facts API.
-- Official company investor-relations publications.
-- Official regulatory publications.
+## 4. Variable Construction
 
-All collected data will include its source, reporting period, units, and retrieval date.
+### Financial ratios
 
-## 5. Data Collection and Processing
+Six financial ratios were constructed:
 
-Data will be collected in a structured format.
+- Revenue growth = (current-year revenue − prior-year revenue) /
+  prior-year revenue × 100
+- Net profit margin = net income / revenue × 100
+- Liabilities-to-assets = total liabilities / total assets × 100
+- Operating cash flow margin = operating cash flow / revenue × 100
+- R&D intensity = R&D expense / revenue × 100
+- Capital expenditure intensity = capital expenditures / revenue × 100
 
-Each financial observation will contain:
-- Company name.
-- Industry.
-- Fiscal year.
-- Financial metric.
-- Reported value.
-- Reporting unit.
-- Source document.
-- Source location or filing reference.
+The six formulas were independently checked against the FY2025
+integrated dataset. All six formula checks passed.
 
-Financial figures will be checked against their original filings.
+### CEO incentive compensation
 
-Missing values will be recorded as missing rather than estimated without justification.
+The standardized CEO incentive compensation share is:
 
-## 6. Analytical Methods
+**(Bonus + Stock Awards + Option Awards + Non-Equity Incentive
+Compensation) / Summary Compensation Table Total Compensation × 100**
 
-The analysis will include:
+Salary, pension/deferred compensation, and all-other compensation
+are excluded from the numerator.
 
-1. Year-over-year financial comparisons.
-2. Financial ratio calculations.
-3. Within-industry company comparisons.
-4. Governance and disclosure comparisons.
-5. Cross-industry descriptive analysis.
-6. Exploratory analysis of relationships between governance, strategy, and financial outcomes.
+The calculation was reconstructed from the individual components
+reported in each company's Summary Compensation Table. All ten
+reconstructed totals reconciled with reported total compensation.
 
-Cross-industry comparisons will account for differences in accounting practices and business models. Banking metrics will not be treated as directly equivalent to metrics for nonfinancial companies.
+### Other governance variables
 
-## 7. Hypotheses
+CEO-chair separation is coded as a binary indicator distinguishing
+separate leadership roles from a combined CEO-chair role.
 
-The project will investigate the following exploratory hypotheses:
+Independent committee membership is coded as a binary indicator
+based on whether all standing Board committees are composed
+exclusively of independent members.
 
-**H1:** Companies with different governance structures demonstrate measurable differences in corporate decision-making and disclosure practices.
+Missing governance thresholds are retained as missing values when
+a numerical threshold was not identified in the reviewed disclosure.
+Missing values are not automatically interpreted as zero.
 
-**H2:** Differences in business strategy and resource allocation are associated with differences in financial performance.
+Board-size and board-independence measurements require a comparability
+caveat: the disclosed director population is not perfectly uniform
+across every company. Some filings refer to director nominees, while
+others describe currently serving directors or a post-election Board.
+This affects strict cross-company comparability and is disclosed as
+a measurement limitation.
 
-**H3:** Companies facing different levels and types of disclosed regulatory exposure demonstrate differences in financial and strategic outcomes.
+## 5. Analytical Methods
 
-**H4:** Relationships between governance, strategy, and financial performance vary across industries.
+### Primary analysis
 
-These hypotheses will be evaluated using observed evidence rather than assumed to be true.
+Spearman rank correlations were calculated for six governance
+variables against three financial outcomes:
 
-## 8. Limitations
+- Net profit margin
+- Revenue growth
+- Operating cash flow margin
 
-- The sample contains only ten companies.
-- Observational relationships do not establish causation.
-- Companies differ in reporting practices and fiscal-year dates.
-- Legal and governance disclosures may not capture every relevant risk.
-- Industry-specific financial metrics may not be comparable across sectors.
-- Qualitative assessments involve judgment and will require consistent coding criteria.
+This produces 18 exploratory relationships using the ten-company
+FY2025 integrated dataset.
 
-## 9. Reproducibility
+Spearman correlation was selected because it measures monotonic
+rank association and does not require the relationship to be linear.
 
-ATLAS will document its data sources, variable definitions, analytical methods, and code.
+### Sensitivity analysis
 
-Calculations will be reproducible, and important conclusions will be traceable to original public sources.
+Two robustness procedures were used:
 
-## 10. Research Integrity
+1. **Nonbank sensitivity:** Recalculate all 18 correlations after
+   excluding JPMorgan Chase and Bank of America. This produces an
+   eight-company nonbank sample.
+2. **Leave-one-out sensitivity:** Recalculate four selected
+   relationships after omitting each company individually. The
+   resulting coefficient range indicates whether a relationship's
+   direction is sensitive to any single company.
 
-The project will distinguish reported facts, calculated results, and researcher interpretations.
+Within-industry pairwise comparisons were also used for selected
+governance-performance relationships.
 
-Limitations, missing data, and contradictory evidence will be disclosed. The project will not present correlations as proof of causation.
+### Cross-language replication
+
+The primary correlations and robustness analyses were independently
+implemented in Python and R. Results were compared numerically to
+check computational reproducibility.
+
+## 6. Missing Data and Comparability
+
+Missing observations were retained rather than imputed.
+
+A missing financial metric may reflect disclosure differences,
+industry-specific reporting, or limitations in the extraction process.
+It does not automatically establish that a company did not incur
+the expense or activity.
+
+Banking companies have business models and balance-sheet structures
+that differ substantially from nonfinancial companies. In particular,
+liabilities-to-assets and operating cash flow measures may not be
+directly comparable across banks and nonfinancial firms.
+
+The nonbank sensitivity analysis provides a supplementary check
+rather than a replacement for the full-sample analysis.
+
+## 7. Research Limitations
+
+The study has a small purposive sample of ten companies, with only
+two companies per industry. It uses a single FY2025 governance
+cross-section matched with FY2025 financial outcomes.
+
+Industry characteristics, company size, business models, accounting
+policies, economic conditions, and other unmeasured factors may
+influence the observed relationships.
+
+The analysis cannot establish that a governance characteristic
+caused a financial outcome. Correlations are exploratory and should
+not be interpreted as evidence of causal effects.
+
+Measurement differences in board populations and incomplete
+financial metric coverage further limit strict comparability.
+
+
+## 8. Board Population Measurement Audit
+
+A source-level audit reviewed board size, independent director counts,
+and board independence percentages for all ten companies.
+
+The numerator and denominator reconcile arithmetically for all ten
+companies. However, the population basis is not identical across
+issuers. Six companies use director nominees or a proposed Board;
+COST uses currently serving directors excluding a nominee; CVX uses
+its current Board before a disclosed reduction effective at the 2026
+annual meeting; and PFE and XOM use currently serving directors.
+
+The original source-verified values were preserved. They were not
+artificially converted to a common population definition where the
+proxy disclosures did not support that conversion.
+
+The company-specific population basis is documented in
+`data/processed/board_measurement_population_audit.csv`. This
+difference remains a limitation on strict cross-company comparisons
+of board size and board independence.
